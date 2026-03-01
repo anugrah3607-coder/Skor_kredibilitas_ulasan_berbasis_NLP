@@ -1,0 +1,13 @@
+{
+  "text_vectorizer": "TfidfVectorizer(1-2gram, max_features=50000)",
+  "classifier": "MultinomialNB",
+  "num_features": [
+    "len_chars",
+    "len_tokens",
+    "digit_count",
+    "ttr",
+    "generic_hits",
+    "nn_similarity"
+  ],
+  "score_formula": "credibility_score = round(100*(1-p_fake))"
+}
