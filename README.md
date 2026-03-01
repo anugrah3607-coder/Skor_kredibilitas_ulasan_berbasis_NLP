@@ -30,6 +30,9 @@ Output:
 - metrik CV (precision/recall/F1/accuracy)
 - model tersimpan di `models/model_v1/`
 
+## Data Ulasan yg Terverifikasi
+https://www.kaggle.com/datasets/rtatman/deceptive-opinion-spam-corpus?resource=download&select=deceptive-opinion.csv
+
 ## Scoring (inferensi)
 ```bash
 python3 predict.py --model-dir models/model_v1 --input examples/sample_unlabeled.csv --output scored.csv
@@ -42,4 +45,4 @@ Kolom output:
 ## Catatan tentang template similarity
 Similarity adalah fitur yang sensitif terhadap *data leakage*.
 - Saat CV: similarity untuk data validasi dihitung terhadap **data train** pada fold itu.
-- Saat inferensi: default dihitung terhadap batch input (MVP). Untuk produk, sebaiknya hitung terhadap **korpus referensi** (mis. ulasan terbaru untuk SKU/seller) dengan opsi `--reference-csv`.
+- Saat inferensi: default dihitung terhadap batch input . Untuk produk, sebaiknya hitung terhadap **korpus referensi** (mis. ulasan terbaru untuk SKU/seller) dengan opsi `--reference-csv`.
