@@ -1,6 +1,6 @@
 # Review Credibility NLP (MVP)
 
-MVP sistem **skor kredibilitas ulasan** berbasis NLP + indikator linguistik (sesuai esai):
+fitur utama sistem **skor kredibilitas ulasan** berbasis NLP + indikator linguistik:
 - TF-IDF (bag-of-words)
 - Multinomial Naive Bayes
 - Indikator linguistik: panjang teks, jumlah digit (detail konkret), TTR (type-token ratio), frasa generik, dan *template similarity* (kemiripan ke ulasan lain).
